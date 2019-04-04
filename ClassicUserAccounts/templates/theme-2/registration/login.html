@@ -1,0 +1,52 @@
+{% extends request.THEME_NAME|add:'site_account_base.html' %}
+{% block content_header %}Login{% endblock%}
+
+{% block content %}
+
+<div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="panel box-shadow">
+                        <div class="panel-body center-block">
+                            <div class="pages-header text-center">
+                                <div class="pages-box-icon"><i class="zmdi zmdi-account-o"></i></div>
+                                <h4>Login to your account</h4>
+                            </div>
+                            <form role="form" method="post">
+								{% csrf_token %}
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="E-mail" name="username" type="email"
+                                               required autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Password" name="password"
+                                               type="password" value="" required>
+                                    </div>
+                                    <div class="row pages-padbot">
+                                        <div class="col-sm-6">
+                                            <input name="remember" type="checkbox" value="Remember">Remember
+                                        </div>
+                                        <div class="col-sm-6 text-right">
+                                            <a href="{% url 'password_reset' %}"
+                                               title="Forgot password?">Forgot password?</a>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-success btn-block" type="submit">Login</button>
+                                    										<p class="text-center pages-padtop"><span>Don't have an account?</span> <span><a
+                                            href="{% url 'signup' %}">Register now</a>.</span>
+                                    </p>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+{% endblock %}
+
+
+

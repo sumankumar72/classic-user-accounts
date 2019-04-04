@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% block title %}
+    Log in
+    {% endblock %}
+
+    <link href="{% static request.THEME_NAME|add:'assets/css/bootstrap.css' %}"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="{% static request.THEME_NAME|add:'assets/css/material-design-iconic-font.min.css' %}">
+    <link rel="stylesheet"
+          href="{% static request.THEME_NAME|add:'assets/css/animate.min.css' %}">
+    <link rel="stylesheet"
+          href="{% static request.THEME_NAME|add:'assets/css/ripple.min.css' %}">
+    <link rel="stylesheet" href="{% static request.THEME_NAME|add:'assets/css/hover.css' %}">
+    <link rel="stylesheet"
+          href="{% static request.THEME_NAME|add:'assets/css/social-buttons.css' %}">
+    <link href="{% static request.THEME_NAME|add:'assets/css/deluxe-admin.css' %}"
+          rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="pages">
+<article>
+    <div id="pages-form" class="container animated fadeIn">
+        <section>
+            {% block content %}
+
+            {% endblock %}
+        </section>
+    </div>
+</article>
+<script src="{% static request.THEME_NAME|add:'assets/js/jquery-2.2.4.min.js' %}"></script>
+<script src="{% static request.THEME_NAME|add:'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static request.THEME_NAME|add:'assets/js/ripple.min.js' %}"></script>
+</body>
+</html>

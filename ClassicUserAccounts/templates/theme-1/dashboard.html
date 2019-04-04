@@ -1,0 +1,461 @@
+{% extends request.THEME_NAME|add:'/classic_site_base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="row">
+
+        <div class="col-lg-6 col-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h4 class="box-title">Monthly Sales</h4>
+            </div>
+            <div class="box-body">
+              <div class="chart">
+                <canvas id="chart_8" style="height:450px"></canvas>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+
+		<div class="col-lg-6 col-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h4 class="box-title">Sales Analytics</h4>
+            </div>
+            <div class="box-body">
+			  <p class="m-t-30">Lorem ipsum dolor sit amet, ectetur adipiscing elit. viverra tellus. ipsumdolorsitda amet, ectetur adipiscing elit. Ectetur adipiscing elit. viverra tellus.ipsum dolor sit.</p>
+			  <p>Lorem ipsum dolor sit amet, ectetur adipiscing elit. viverra tellus.</p>
+              <div class="chart">
+                <div id="morris-area-chart" style="height:365px;"></div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+		</div>
+
+		  <div class="col-12 col-lg-4">
+            <div class="box box-body p-0 bg-info">
+			  <div class="p-15">
+				  <div class="flexbox">
+					<h6 class="text-uppercase">Total Leads</h6>
+					<h6><i class="ion-android-arrow-dropup text-success font-size-18 mr-1"></i> %20</h6>
+				  </div>
+
+				  <ul class="list-inline my-10">
+					<li class="br-1 px-10">
+					  <h6 class="mb-0 text-bold">8952</h6>
+					  <small>Growth</small>
+					</li>
+
+					<li class="br-1 px-10">
+					  <h6 class="mb-0 text-bold">7458</h6>
+					  <small>Last Month</small>
+					</li>
+
+					<li class="px-10">
+					  <h6 class="mb-0 text-bold">3254</h6>
+					  <small>Today</small>
+					</li>
+				  </ul>
+			  </div>
+              <div id="linearea">1,3,5,4,6,8,7,9,7,8,10,16,14,10</div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-lg-4">
+            <div class="box box-body p-0 bg-danger">
+			  <div class="p-15">
+				  <div class="flexbox">
+					<h6 class="text-uppercase">Total Vendor</h6>
+					<h6><i class="ion-android-arrow-dropdown text-white font-size-18 mr-1"></i> %20</h6>
+				  </div>
+
+				  <ul class="list-inline my-10">
+					<li class="br-1 px-10">
+					  <h6 class="mb-0 text-bold">8952</h6>
+					  <small>Growth</small>
+					</li>
+
+					<li class="br-1 px-10">
+					  <h6 class="mb-0 text-bold">7458</h6>
+					  <small>Last Month</small>
+					</li>
+
+					<li class="px-10">
+					  <h6 class="mb-0 text-bold">3254</h6>
+					  <small>Today</small>
+					</li>
+				  </ul>
+			  </div>
+			  <div id="baralc" class="text-center"></div>
+            </div>
+          </div>
+
+		  <div class="col-12 col-lg-4">
+			<div class="box box-body p-0 bg-success">
+			  <div class="p-15">
+				  <div class="flexbox">
+					<h6 class="text-uppercase">Invoice</h6>
+					<h6><i class="ion-android-arrow-dropup text-white font-size-18 mr-1"></i> %20</h6>
+				  </div>
+
+				  <ul class="list-inline my-10">
+					<li class="br-1 px-10">
+					  <h6 class="mb-0 text-bold">8952</h6>
+					  <small>Growth</small>
+					</li>
+
+					<li class="br-1 px-10">
+					  <h6 class="mb-0 text-bold">7458</h6>
+					  <small>Last Month</small>
+					</li>
+
+					<li class="px-10">
+					  <h6 class="mb-0 text-bold">3254</h6>
+					  <small>Today</small>
+					</li>
+				  </ul>
+			  </div>
+
+			  <div id="linechart">1,3,5,4,6,8,7,9,7,8,10,16,14,10</div>
+			</div>
+		  </div>
+
+
+			<div class="col-md-12 col-lg-4">
+				<div class="box">
+					<div class="box-header with-border">
+						<h4 class="box-title">Browser Stats</h4>
+					</div>
+					<div class="box-body p-0">
+					  <div class="media-list media-list-hover media-list-divided">
+						<a class="media media-single" href="#">
+						  <span class="title">Google Chrome</span>
+						  <span class="badge badge-pill badge-secondary">21.8%</span>
+						</a>
+
+						<a class="media media-single" href="#">
+						  <span class="title">Mozila Firefox</span>
+						  <span class="badge badge-pill badge-primary">21.8%</span>
+						</a>
+
+						<a class="media media-single" href="#">
+						  <span class="title">Apple Safari</span>
+						  <span class="badge badge-pill badge-info">21.8%</span>
+						</a>
+
+						<a class="media media-single" href="#">
+						  <span class="title">Internet Explorer</span>
+						  <span class="badge badge-pill badge-success">21.8%</span>
+						</a>
+
+						<a class="media media-single" href="#">
+						  <span class="title">Opera mini</span>
+						  <span class="badge badge-pill badge-danger">21.8%</span>
+						</a>
+
+						<a class="media media-single" href="#">
+						  <span class="title">Mozila Firefox</span>
+						  <span class="badge badge-pill badge-warning">21.8%</span>
+						</a>
+					  </div>
+				   </div>
+				</div>
+			  </div>
+			<div class="col-md-12 col-lg-4">
+				<div class="box">
+					<div class="box-header with-border">
+					  <h4 class="box-title">CPU Load</h4>
+					</div>
+					<div class="box-body">
+						<div>
+							<div id="interactive" style="height: 215px;"></div>
+						</div>
+						<ul class="flexbox flex-justified text-center mt-35">
+						  <li class="br-1">
+							<div class="font-size-20">Usage</div>
+							<small>60GB</small>
+						  </li>
+
+						  <li class="br-1">
+							<div class="font-size-20">Space</div>
+							<small>320 GB</small>
+						  </li>
+
+						  <li>
+							<div class="font-size-20">CPU</div>
+							<small>50%</small>
+						  </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		  <div class="col-xl-4 col-lg-6">
+			  <div class="box">
+				<div class="box-header no-border" style="position: absolute;width: 100%;z-index: 9;">
+					<ul class="list-inline pull-left">
+						<li>
+							<a href="#" class="text-white"><i class="fa fa-expand"></i></a>
+						</li>
+						<li>
+							<a href="#" class="text-white"><i class="fa fa-heart-o"></i></a>
+						</li>
+					</ul>
+					<span class="badge badge-dot pull-right badge-danger" data-toggle="tooltip" data-original-title="Label"></span>
+                </div>
+				<div class="box-body bg-img py-70" style="background-image: url({% static request.THEME_NAME|add:'images/gallery/thumb/5.jpg' %})" data-overlay="5">
+					<blockquote class="blockquote blockquote-inverse no-border no-margin">
+					  <p class="font-size-22">Donec vitae leo dignissim sodales.</p>
+					  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+					</blockquote>
+				</div>
+				<div class="box-body mb-5">
+					<h4>volutpat metus commodo.</h4>
+					<div class="flexbox">
+						<div class="time">Few seconds ago</div>
+						<ul class="flexbox">
+							<li><a href="#">845 <i class="fa fa-comment-o"></i></a></li>
+							<li><a href="#">85K <i class="fa fa-heart-o"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="box-footer p-0">
+					<div class="media-list media-list-hover">
+						<a href="#" class="media media-single">
+							<img class="avatar pull-left mr-10" src="../images/avatar/2.jpg" alt="">
+							<div>
+								<h5 class="mb-0">Stevan Smith</h5>
+								<p class="text-fade mb-0">Shared a photo on your wall</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			  </div>
+          </div>
+
+		  <div class="col-lg-8 col-12">
+			<div class="box">
+				<div class="box-header with-border">
+					<h4 class="box-title">Order Status</h4>
+				</div>
+				<div class="box-body pt-0">
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Invoice</th>
+									<th>User</th>
+									<th>Order date</th>
+									<th>Amount</th>
+									<th class="text-center">Status</th>
+									<th class="text-center">Tracking Number</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="javascript:void(0)" class="btn-link"> Order #65845</a></td>
+									<td>Johen Doe</td>
+									<td><span class="text-muted"><i class="fa fa-clock-o"></i> Jng 26, 2017</span></td>
+									<td>$45.00</td>
+									<td class="text-center">
+										<div class="label label-table label-success">Paid</div>
+									</td>
+									<td class="text-center">-</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0)" class="btn-link"> Order #95425</a></td>
+									<td>Maical Boy</td>
+									<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 24, 2017</span></td>
+									<td>$245.30</td>
+									<td class="text-center">
+										<div class="label label-table label-info">Shipped</div>
+									</td>
+									<td class="text-center"><i class="fa fa-truck"></i> ABC85421952</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0)" class="btn-link"> Order #53433</a></td>
+									<td>Amanda Roc</td>
+									<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 24, 2017</span></td>
+									<td>$38.00</td>
+									<td class="text-center">
+										<div class="label label-table label-info">Shipped</div>
+									</td>
+									<td class="text-center"><i class="fa fa-truck"></i> ABC85421952</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0)" class="btn-link"> Order #8542</a></td>
+									<td>Vedaran Doe</td>
+									<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 15, 2017</span></td>
+									<td>$77.99</td>
+									<td class="text-center">
+										<div class="label label-table label-info">Shipped</div>
+									</td>
+									<td class="text-center"><i class="fa fa-truck"></i> ABC85421952</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0)" class="btn-link"> Order #7458</a></td>
+									<td>Sumakar Jack</td>
+									<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 12, 2017</span></td>
+									<td>$18.00</td>
+									<td class="text-center">
+										<div class="label label-table label-success">Paid</div>
+									</td>
+									<td class="text-center">-</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0)" class="btn-link"> Order #84562</a></td>
+									<td>Karlos Potar</td>
+									<td><span class="text-muted"><i class="fa fa-clock-o"></i> Jng 26, 2017</span></td>
+									<td>$45.00</td>
+									<td class="text-center">
+										<div class="label label-table label-success">Paid</div>
+									</td>
+									<td class="text-center">-</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0)" class="btn-link"> Order #845121</a></td>
+									<td>Jil Clark</td>
+									<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 24, 2017</span></td>
+									<td>$245.30</td>
+									<td class="text-center">
+										<div class="label label-table label-info">Shipped</div>
+									</td>
+									<td class="text-center"><i class="fa fa-truck"></i> ABC85421952</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0)" class="btn-link">Order #95487</a></td>
+									<td>Brethwth doe</td>
+									<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 17, 2017</span></td>
+									<td>$658.00</td>
+									<td class="text-center">
+										<div class="label label-table label-danger">Refunded</div>
+									</td>
+									<td class="text-center">-</td>
+								</tr>
+								<tr>
+									<td><a href="javascript:void(0)" class="btn-link">Order #123548</a></td>
+									<td>Mical Doe</td>
+									<td><span class="text-muted"><i class="fa fa-clock-o"></i> Oct 19, 2017</span></td>
+									<td>$45.58</td>
+									<td class="text-center">
+										<div class="label label-table label-warning">Unpaid</div>
+									</td>
+									<td class="text-center">-</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-4 col-12">
+			  <div class="box bg-img box-inverse" style="background-image: url(../images/gallery/thumb/4.jpg);" data-overlay="5">
+				<div class="box-body">
+				  <div class="p-5">
+					  <h3 class="white">
+						<span class="font-size-30">City, </span>Country
+					  </h3>
+					  <p class="weather-day-date mb-30">
+						<span class="mr-5">MONDAY</span> May 11, 2017
+					  </p>
+					  <div class="mb-35 weather-icon">
+						<canvas class="mr-40 text-top" id="icon1" width="90" height="90"></canvas>
+						<div class="inline-block">
+						  <span class="font-size-50">29°
+							<span class="font-size-40">C</span>
+						  </span>
+						  <p class="text-left">DAY RAIN</p>
+						</div>
+					  </div>
+					  <div class="row no-space">
+						<div class="col-2">
+						  <div>
+							<div class="mb-10">TUE</div>
+							<i class="wi-day-sunny font-size-30 mb-10"></i>
+							<div>24°
+							  <span class="font-size-12">C</span>
+							</div>
+						  </div>
+						</div>
+						<div class="col-2">
+						  <div>
+							<div class="mb-10">WED</div>
+							<i class="wi-day-cloudy font-size-30 mb-10"></i>
+							<div>21°
+							  <span class="font-size-12">C</span>
+							</div>
+						  </div>
+						</div>
+						<div class="col-2">
+						  <div>
+							<div class="mb-10">THU</div>
+							<i class="wi-day-sunny font-size-30 mb-10"></i>
+							<div>25°
+							  <span class="font-size-12">C</span>
+							</div>
+						  </div>
+						</div>
+						<div class="col-2">
+						  <div>
+							<div class="mb-10">FRI</div>
+							<i class="wi-day-cloudy-gusts font-size-30 mb-10"></i>
+							<div>20°
+							  <span class="font-size-12">C</span>
+							</div>
+						  </div>
+						</div>
+						<div class="col-2">
+						  <div>
+							<div class="mb-10">SAT</div>
+							<i class="wi-day-lightning font-size-30 mb-10"></i>
+							<div>18°
+							  <span class="font-size-12">C</span>
+							</div>
+						  </div>
+						</div>
+						<div class="col-2">
+						  <div>
+							<div class="mb-10">SUN</div>
+							<i class="wi-day-storm-showers font-size-30 mb-10"></i>
+							<div>14°
+							  <span class="font-size-12">C</span>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<!-- /.box-body -->
+			  </div>
+			  <!-- /.box -->
+			  <div class="box-group">
+				<div class="box">
+				  <div class="vertical-align h-160">
+					<div class="vertical-align-middle font-size-30 text-center w-p100">
+					  <span class="mr-10"><i class="fa fa-line-chart"></i></span>
+					  <span class="countnm per">75</span>
+					  <div class="font-size-16 mt-3 text-fade">More Profit</div>
+					</div>
+				  </div>
+				</div>
+				<div class="box bg-primary">
+				  <div class="vertical-align text-center p-30 h-160">
+					<div class="vertical-align-middle font-size-30">
+					  <p>Today</p>
+					  <p>Sale</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+
+	  </div>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends request.THEME_NAME|add:'site_account_base.html' %}
+
+{% block content_header %}Logged out{% endblock%}
+
+{% block content %}
+
+<div class="login-box-body">
+    <p class="login-box-msg">Thanks for spending some quality time with the Web site today.</p>
+    <div class="form-group has-feedback">
+        <div style="position: relative;width: 100%;text-align:center;">
+              <i class="fa fa-sign-out" aria-hidden="true"
+                 style="font-size: 80px;border: 5px solid #666;border-radius: 50%;width: 95px;height: 95px;text-align: -webkit-right;"></i>
+            </div>
+    </div>
+    <div class="social-auth-links text-center">
+      <a href="{% url 'login' %}" class="text-center">Login again</a><br>
+    </div>
+
+</div>
+
+{% endblock %}
+
+

@@ -1,0 +1,63 @@
+{% extends request.THEME_NAME|add:'site_account_base.html' %}
+
+
+{% block content_header %}Signup{% endblock%}
+
+{% block content %}
+
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel box-shadow">
+            <div class="panel-body center-block">
+                <div class="pages-header text-center">
+                    <div class="pages-box-icon"><i class="zmdi zmdi-account-o"></i></div>
+                    <h4>Create account</h4>
+                </div>
+                <form role="form" method="post">
+                    {% csrf_token %}
+                    <fieldset>
+                        <div class="form-group col-lg-6">
+                            <label>First name</label>
+                            <input type="text" class="form-control" placeholder="First name" required name="first_name">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>Last name</label>
+                            <input type="text" class="form-control" placeholder="Last name" required name="last_name">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <label>Email Address</label>
+                            <input class="form-control" placeholder="E-mail" name="email" type="email" required>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="Password" required name="password1">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label>Confirm Password</label>
+                            <input type="password" class="form-control" placeholder="Confirm Password" required name="password2">
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="checkbox">
+                                <label>
+                                    <span>
+                                    <input type="checkbox">
+                                    Accept <a href="javascript:void(0);">terms of service</a>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-success btn-block" type="submit">Register</button>
+                        <p class="text-center pages-padtop"><span>Already an account?</span> <span>
+                            <a href="{% url 'login' %}">Login now</a>.</span></p>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+

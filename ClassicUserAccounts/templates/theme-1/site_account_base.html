@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% block title %}
+    Log in
+    {% endblock %}
+
+	<!-- Bootstrap 4.1-->
+	<link rel="stylesheet" href="{% static request.THEME_NAME|add:'assets/vendor_components/bootstrap/css/bootstrap.css' %} ">
+
+	<!-- Bootstrap extend-->
+	<link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/bootstrap-extend.css' %}">
+
+	<!-- Theme style -->
+	<link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/master_style.css' %}">
+
+	<!-- SoftMaterial admin skins -->
+	<link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/skins/_all-skins.css' %}">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body class="hold-transition bg-img" style="background-image: url({% static request.THEME_NAME|add:'images/gallery/full/6.jpg' %})" data-overlay="4">
+
+<div class="container h-p100">
+	{% block content %}
+	{% endblock %}
+</div>
+
+
+
+	<!-- jQuery 3 -->
+	<script src="{% static request.THEME_NAME|add:'assets/vendor_components/jquery-3.3.1/jquery-3.3.1.js' %}"></script>
+
+	<!-- popper -->
+	<script src="{% static request.THEME_NAME|add:'assets/vendor_components/popper/popper.min.js' %}"></script>
+
+	<!-- Bootstrap 4.1-->
+	<script src="{% static request.THEME_NAME|add:'assets/vendor_components/bootstrap/js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>

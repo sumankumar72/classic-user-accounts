@@ -1,0 +1,916 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="787d5e2e-c611-4379-a1e1-c7fff2325129" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/bootstrap-wysihtml5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/colorpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/fullcalendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/jquery.easy-pie-chart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/jquery.gritter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/matrix-login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/matrix-media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/matrix-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/uniform.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/font/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/font/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/font/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/font/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/font/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/font-awesome/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/breadcrumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/demo/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/demo/av1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/demo/av2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/demo/av3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/demo/av4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/demo/av5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/demo/demo-image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/demo/demo-image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/demo/demo-image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/demo/envelope.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/gallery/imgbox1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/gallery/imgbox2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/gallery/imgbox3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/gallery/imgbox4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/gallery/imgbox5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/gritter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/hue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/cabinet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/client.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/database.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/people.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/piechart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/shopping-bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/survey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/tag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/wallet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/16/web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/cabinet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/client.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/dashboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/database.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/people.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/piechart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/shopping-bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/survey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/tag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/wallet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/icons/32/web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/larrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/menu-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/rarrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/saturation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/select2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/img/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/bootstrap-colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/bootstrap-wysihtml5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/excanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.easy-pie-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.flot.crosshair.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.flot.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.flot.pie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.flot.resize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.flot.stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.gritter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.peity.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.ui.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.uniform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/jquery.wizard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/masked.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.form_common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.form_validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.interface.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.popover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.tables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/matrix.wizard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/js/wysihtml5-0.3.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/templates/matrix-admin/classic_site_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/templates/matrix-admin/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClassicUserAccounts/templates/matrix-admin/site_account_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassicUserAccounts/forms/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClassicUserAccounts/forms/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassicUserAccounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ClassicUserAccounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoMinimal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoMinimal/settings.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DjangoMinimal/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/forms/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="78" column="43" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="43" />
+              <folding>
+                <element signature="n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/site_account_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/classic_site_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5040">
+              <caret line="336" column="28" selection-start-line="336" selection-start-column="28" selection-end-line="336" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/matrix-admin/site_account_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="117" column="25" selection-end-line="188" />
+              <folding>
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#li#10;n#ul#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#li#11;n#ul#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;&gt;&lt;/script&gt;</find>
+      <find>.jpg&quot;</find>
+      <find>watch-black.jpg</find>
+      <find>./ass</find>
+      <find>./</find>
+      <find>.jpg</find>
+      <find>play-button.png</find>
+      <find>avatar.jpg</find>
+      <find>New Comments!</find>
+      <find>Extra</find>
+      <find>extra</find>
+      <find>Dorin</find>
+      <find>block</find>
+      <find>thumbnail</find>
+      <find>Logout</find>
+      <find>&lt;title&gt;</find>
+      <find>Delux</find>
+      <find>site</find>
+      <find>Softma</find>
+      <find>logo-light-text.png</find>
+      <find>index.</find>
+      <find>logout</find>
+      <find>USER_BASED_THEME</find>
+      <find>10k</find>
+      <find>&lt;script src=&quot;</find>
+      <find>.js&quot;</find>
+      <find>content</find>
+      <find>menu</find>
+      <find>Da</find>
+      <find>User</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>{% static 'img/user2-160x160.jpg' %}</replace>
+      <replace>{% static 'img/user3-128x128.jpg' %}</replace>
+      <replace>{% static 'img/user4-128x128.jpg' %}</replace>
+      <replace>request.user.get_avatar_url</replace>
+      <replace>ClassicUserAccount</replace>
+      <replace>{% static '</replace>
+      <replace>'% }&quot;&gt;&lt;/script&gt;</replace>
+      <replace>' %}&quot;&gt;&lt;/script&gt;</replace>
+      <replace>.jpg' %}&quot;</replace>
+      <replace>{% static request.THEME_NAME|add:'</replace>
+      <replace>.jpg' %}</replace>
+      <replace>play-button.png' %}</replace>
+      <replace>&lt;script src=&quot;{% static request.THEME_NAME|add:'</replace>
+      <replace>.js' %}&quot;</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/DjangoMinimal/urls.py" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/registration/login.html" />
+        <option value="$PROJECT_DIR$/djago-classic-user-accounts/ClassicUserAccounts/forms/forms.py" />
+        <option value="$PROJECT_DIR$/djago-classic-user-accounts/ClassicUserAccounts/templates/site_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/middleware/__init__.py" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/site_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/dashboard.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/site_account_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/classic_site_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/dashboard.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/logged_out.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/login.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/password_change.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/static/theme-1/assets/vendor_components/a.css" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/static/theme-1/css/master_style.css" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/signup.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/login.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/password_reset_form.html" />
+        <option value="$PROJECT_DIR$/djago-classic-user-accounts/README.rst" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/dashboard.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/registration/login.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/registration/signup.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/registration/password_reset_form.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/dashboard.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/classic_site_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/classic_site_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/classic_site_base.html" />
+        <option value="$PROJECT_DIR$/djago-classic-user-accounts/setup.py" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/admin.py" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/middleware/ClassUserAccounts.py" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/password_reset_form.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/site_account_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/password_reset_complete.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/site_account_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/site_account_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/password_change_done.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/password_reset_done.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/password_reset_complete.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/urls.py" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/password_reset_confirm_form.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/password_reset_confirm_form.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/matrix-admin/site_account_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/matrix-admin/classic_site_base.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/matrix-admin/dashboard.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/signup.html" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/views.py" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/models.py" />
+        <option value="$PROJECT_DIR$/DjangoMinimal/settings.py" />
+        <option value="$PROJECT_DIR$/ClassicUserAccounts/forms/forms.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="234" />
+    <option name="y" value="99" />
+    <option name="width" value="752" />
+    <option name="height" value="741" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="classic-user-accounts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classic-user-accounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classic-user-accounts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classic-user-accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="ClassicUserAccounts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classic-user-accounts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classic-user-accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="ClassicUserAccounts" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classic-user-accounts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classic-user-accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="ClassicUserAccounts" type="462c0819:PsiDirectoryNode" />
+              <item name="middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="classic-user-accounts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="classic-user-accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="DjangoMinimal" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="simple-line-icons.css&#9;FILE&#9;file:///home/skysoft/skysoft5.0/djangominimal-host/DjangoMinimal/ClassicUserAccounts/static/theme-1/assets/vendor_components/material-design-iconic-font/simple-line-icons-master/css/simple-line-icons.css&#10;dashboard.html&#9;FILE&#9;file:///home/skysoft/skysoft5.0/djangominimal-host/DjangoMinimal/ClassicUserAccounts/templates/dashboard.html&#10;password_change.html&#9;FILE&#9;file:///home/skysoft/skysoft5.0/djangominimal-host/DjangoMinimal/ClassicUserAccounts/templates/registration/password_change.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin" />
+      <recent name="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration" />
+      <recent name="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration" />
+      <recent name="$PROJECT_DIR$/ClassicUserAccounts/static/theme-2" />
+      <recent name="$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ClassicUserAccounts/static/theme-1/assets/vendor_components/weather-icons" />
+      <recent name="$PROJECT_DIR$/ClassicUserAccounts/static/theme-1/assets/vendor_components/jquery-sparkline" />
+      <recent name="$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme" />
+      <recent name="$PROJECT_DIR$/ClassicUserAccounts/static/theme-1/assets/vendor_components" />
+      <recent name="$PROJECT_DIR$/ClassicUserAccounts/static/theme-1/assets/vendor_components/Ionicons/css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="787d5e2e-c611-4379-a1e1-c7fff2325129" name="Default" comment="" />
+      <created>1537423769040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537423769040</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1366" height="702" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2769918" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32286212" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24950232" />
+      <window_info id="Structure" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Data View" order="0" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ClassicUserAccounts/models.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/password_change.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="51" column="43" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/password_reset_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djago-classic-user-accounts/LICENSE" />
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/static/theme-1/images/avatar/2.jpg" />
+    <entry file="file://$PROJECT_DIR$/djago-classic-user-accounts/ClassicUserAccounts/forms/forms.py" />
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/static/theme-2/preview/deluxe/maps/index.html" />
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/static/theme-2/assets/js/maps/jvectormap/country/jquery-jvectormap-de-mill.js" />
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/registration/password_reset_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="219" column="29" selection-start-line="219" selection-start-column="29" selection-end-line="219" selection-end-column="29" />
+          <folding>
+            <element signature="n#li#0;n#!!top" />
+            <element signature="n#li#1;n#!!top" />
+            <element signature="n#li#2;n#!!top" />
+            <element signature="n#li#3;n#!!top" />
+            <element signature="n#li#4;n#!!top" />
+            <element signature="n#li#5;n#!!top" />
+            <element signature="n#li#6;n#!!top" />
+            <element signature="n#li#7;n#!!top" />
+            <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#li#12;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#i#0;n#h5#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#h5#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#h5#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#h5#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#5;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#6;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djago-classic-user-accounts/setup.py" />
+    <entry file="file://$PROJECT_DIR$/djago-classic-user-accounts/README.rst" />
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.vscode/settings.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CONTRIBUTING.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/classic_site_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#6;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#7;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#7;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#9;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoMinimal/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/password_reset_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="904" selection-start-line="2" selection-start-column="904" selection-end-line="2" selection-end-column="904" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-2/site_account_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/password_change_done.html" />
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/password_change_done.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/password_reset_complete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/site_account_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/password_reset_done.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/password_reset_complete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/password_reset_confirm_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myenv/lib/python3.6/site-packages/django/contrib/auth/views.py" />
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/registration/password_reset_confirm_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/static/matrix-admin/css/select2.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/classic_site_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4935">
+          <caret line="329" column="11" selection-start-line="329" selection-start-column="11" selection-end-line="329" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/matrix-admin/classic_site_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/matrix-admin/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="86" selection-start-line="5" selection-start-column="86" selection-end-line="5" selection-end-column="86" />
+          <folding>
+            <element signature="n#ul#0;n#li#5;n#!!top" />
+            <element signature="n#li#8;n#!!top" />
+            <element signature="n#li#9;n#!!top" />
+            <element signature="n#li#10;n#!!top" />
+            <element signature="n#div#0;n#li#10;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#10;n#!!top" expanded="true" />
+            <element signature="n#li#11;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#11;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="78" column="43" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="43" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/site_account_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/theme-1/classic_site_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5040">
+          <caret line="336" column="28" selection-start-line="336" selection-start-column="28" selection-end-line="336" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/matrix-admin/site_account_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="117" column="25" selection-end-line="188" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#10;n#ul#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#11;n#ul#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/templates/default-theme/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/middleware/ClassUserAccounts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoMinimal/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="149" column="29" selection-start-line="149" selection-start-column="29" selection-end-line="149" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClassicUserAccounts/forms/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+=======
+>>>>>>> 50fe34932bc4acac80b023c65da82166e83ec444

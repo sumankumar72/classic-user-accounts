@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <title> {% block title %} {% endblock %} </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/bootstrap-responsive.min.css' %}"/>
+    <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/matrix-login.css' %}"/>
+    <link href="{% static request.THEME_NAME|add:'font-awesome/css/font-awesome.css' %}" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <style>
+        #loginbox {overflow: hidden !important;text-align: left;position: relative;border: 1px solid #484848;}
+    </style>
+    {% block extra_style %} {% endblock %}
+
+</head>
+<body>
+<div id="loginbox">
+<div class="control-group normal_text"><h3><img src="/static/matrix-admin/img/logo.png" alt="Logo"/></h3></div>
+{% block content %}
+
+{% endblock %}
+</div>
+<script src="{% static request.THEME_NAME|add:'js/jquery.min.js' %}"></script>
+<script src="{% static request.THEME_NAME|add:'js/matrix.login.js' %}"></script>
+</body>
+
+</html>
