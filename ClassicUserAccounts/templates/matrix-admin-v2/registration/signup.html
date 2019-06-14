@@ -1,0 +1,81 @@
+{% extends request.THEME_NAME|add:'site_account_base.html' %}
+
+<!--{% with "shop/"|add:shop_name|add:"/base.html" as template %}-->
+<!--{% include template %}-->
+<!--{% endwith %}-->
+
+
+{% block title %}Signup{% endblock%}
+{% block extra_style %}
+<style>
+    #loginbox .control-group {
+        padding: 10px 0;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+
+    <form action="" method="post">
+        {% csrf_token %}
+         <div class="control-group">
+            <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on bg_lg"><i class="icon-user"> </i></span><input type="text" placeholder="First Name" name="first_name"/>
+                </div>
+            </div>
+         </div>
+         <div class="control-group">
+             <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on bg_lg"><i class="icon-user"> </i></span><input type="text" placeholder="Last Name" name="last_name"/>
+                </div>
+             </div>
+         </div>
+         <div class="control-group">
+             <div class="controls">
+                 <div class="main_input_box">
+                     <span class="add-on bg_lg"><i class="icon-envelope"> </i></span><input type="text" placeholder="Email" name="email"/>
+                 </div>
+             </div>
+         </div>
+         <div class="control-group">
+             <div class="controls">
+                 <div class="main_input_box">
+                    <span class="add-on bg_lg"><i class="icon-lock"> </i></span><input type="password" placeholder="Password" name="password1"/>
+                </div>
+             </div>
+         </div>
+         <div class="control-group">
+             <div class="controls">
+                 <div class="main_input_box">
+                    <span class="add-on bg_lg"><i class="icon-lock"> </i></span><input type="password" placeholder="Confirm Password" name="password2"/>
+                </div>
+             </div>
+         </div>
+
+        <div class="form-actions">
+            <span class="pull-left">
+              <label>
+                <input type="checkbox">
+                I agree to the <a href="#">terms</a>
+              </label>
+            </span>
+            <span class="pull-right">
+              <button type="submit" class="btn btn-success">Register</button>
+            </span>
+        </div>
+
+    </form>
+
+    <div class="social-auth-links text-center">
+        <p>- OR -</p>
+        <a href="{% url 'login' %}" class="text-center">I already have a membership</a>
+    </div>
+
+
+
+{% endblock %}
+
+

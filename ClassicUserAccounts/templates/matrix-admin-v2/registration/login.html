@@ -1,0 +1,40 @@
+{% extends request.THEME_NAME|add:'site_account_base.html' %}
+{% block title %}Login{% endblock%}
+{% block content %}
+      <form id="loginform" class="form-vertical" method="post">
+      {% csrf_token %}
+        <div class="control-group">
+            <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on bg_lg"><i class="icon-user"> </i></span><input type="text" placeholder="Username" name="username"/>
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on bg_ly"><i class="icon-lock"></i></span><input type="password" placeholder="Password" name="password"/>
+                </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <span class="pull-left">
+              <label>
+                <input type="checkbox">
+                Remember Me
+              </label>
+            </span>
+            <span class="pull-right">
+              <button type="submit" class="btn btn-success">Sign In</button>
+            </span>
+        </div>
+        <div style="padding: 14px 20px 15px;text-align: center;">
+                <div style="text-align: center;color: #fff;padding-bottom:10px;">- OR -</div>
+                <a href="{% url 'password_reset' %}" class="flip-link btn btn-info">I forgot my password</a><br><br>
+                <a href="{% url 'signup' %}" class="flip-link btn btn-info">Register a new membership</a><br>
+        </div>
+
+    </form>
+{% endblock %}
+
+

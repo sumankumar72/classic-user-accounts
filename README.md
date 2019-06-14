@@ -1,10 +1,10 @@
 # Django Classic User Accounts
 
-[![GitHub forks](https://img.shields.io/github/forks/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/network) [![GitHub issues](https://img.shields.io/github/issues/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/issues) [![GitHub stars](https://img.shields.io/github/stars/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/stargazers) [![GitHub license](https://img.shields.io/github/license/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account) [![GitHub license](https://img.shields.io/badge/This%20month%20downloads-5089%2B-brightgreen.svg)](https://github.com/sumankumar72/django-classic-user-account) [![GitHub license](https://img.shields.io/badge/Total%20downloads-15K%2B-brightgreen.svg)](https://github.com/sumankumar72/django-classic-user-account)
+[![GitHub forks](https://img.shields.io/github/forks/sumankumar72/classic-user-accounts.svg)](https://github.com/sumankumar72/classic-user-accounts/network) [![GitHub issues](https://img.shields.io/github/issues/sumankumar72/classic-user-accounts.svg)](https://github.com/sumankumar72/classic-user-accounts/issues) [![GitHub stars](https://img.shields.io/github/stars/sumankumar72/classic-user-accounts.svg)](https://github.com/sumankumar72/classic-user-accounts/stargazers) [![GitHub license](https://img.shields.io/github/license/sumankumar72/classic-user-accounts.svg)](https://github.com/sumankumar72/classic-user-accounts) [![GitHub license](https://img.shields.io/badge/This%20month%20downloads-5089%2B-brightgreen.svg)](https://github.com/sumankumar72/classic-user-accounts) [![GitHub license](https://img.shields.io/badge/Total%20downloads-25K%2B-brightgreen.svg)](https://github.com/sumankumar72/classic-user-accounts)
 [![GitHub license](https://img.shields.io/badge/Slack-%20-%23e01563.svg)](https://sumanshandilya.slack.com)
 
 #### Latest Update
-- New Matrix-Admin Theme added (`Add THEME_NAME = 'matrix-admin' in your settings file`).
+- New Matrix-Admin BT4 Theme added (`Add THEME_NAME = 'matrix-admin-v2' in your settings file`).
 
 #### Features
 - Login
@@ -98,6 +98,15 @@
 `9. Run python manage.py migrate to extend django user model.`
 
 `10. Start the development server and visit http://127.0.0.1:8000/admin/ to manage user profile.`
+
+`11. Available Themes.::`
+```
+    default-theme
+    theme-1
+    theme-2
+    matrix-admin
+    matrix-admin-v2
+```
 
 #### Base Template Setup
 1. Create `site_base.html` file in your project templates directory. `site_base.html` have below content.

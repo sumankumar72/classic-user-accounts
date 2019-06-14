@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-classic-user-accounts',
-    version='1.0.32',
+    version='1.0.33',
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',  # example license
