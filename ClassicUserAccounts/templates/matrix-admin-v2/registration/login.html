@@ -1,40 +1,61 @@
 {% extends request.THEME_NAME|add:'site_account_base.html' %}
+{% load static %}
 {% block title %}Login{% endblock%}
 {% block content %}
-      <form id="loginform" class="form-vertical" method="post">
-      {% csrf_token %}
-        <div class="control-group">
-            <div class="controls">
-                <div class="main_input_box">
-                    <span class="add-on bg_lg"><i class="icon-user"> </i></span><input type="text" placeholder="Username" name="username"/>
+
+
+
+        <div class="auth-wrapper d-flex no-block justify-content-center align-items-center bg-dark">
+            <div class="auth-box bg-dark border-top border-secondary">
+                <div id="loginform">
+                    <div class="text-center p-t-20 p-b-20"  style="padding-bottom:20px;">
+                        <span class="db"><img src="{% static 'img/logo.png' %}" alt="logo" /></span>
+                    </div>
+                    <form method="post" class="form-horizontal m-t-20">
+                        {% csrf_token %}
+                        <div class="row p-b-30" style="padding-bottom:30px;">
+                            <div class="col-12">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-success text-white" id="basic-addon1"><i class="ti-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Username"
+                                           aria-describedby="basic-addon1" name="username" id="username">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-warning text-white" id="basic-addon2"><i class="ti-pencil"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Password" aria-label="Password"
+                                           aria-describedby="basic-addon1" name="password" id="password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border-top border-secondary">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="p-t-20"  style="padding-top:20px;">
+                                        <button class="btn btn-success float-right" type="submit">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div style="text-align:center;color:#fff; height:50px;">
+                                    --OR--
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div style="text-align:center;">
+                                    <a href="{% url 'password_reset' %}" class="btn btn-primary">I forgot my password</a><br><br>
+                                    <a href="{% url 'signup' %}" class="btn btn-primary">Register a new membership</a><br>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
-        <div class="control-group">
-            <div class="controls">
-                <div class="main_input_box">
-                    <span class="add-on bg_ly"><i class="icon-lock"></i></span><input type="password" placeholder="Password" name="password"/>
-                </div>
-            </div>
-        </div>
-        <div class="form-actions">
-            <span class="pull-left">
-              <label>
-                <input type="checkbox">
-                Remember Me
-              </label>
-            </span>
-            <span class="pull-right">
-              <button type="submit" class="btn btn-success">Sign In</button>
-            </span>
-        </div>
-        <div style="padding: 14px 20px 15px;text-align: center;">
-                <div style="text-align: center;color: #fff;padding-bottom:10px;">- OR -</div>
-                <a href="{% url 'password_reset' %}" class="flip-link btn btn-info">I forgot my password</a><br><br>
-                <a href="{% url 'signup' %}" class="flip-link btn btn-info">Register a new membership</a><br>
         </div>
 
-    </form>
 {% endblock %}
 
 

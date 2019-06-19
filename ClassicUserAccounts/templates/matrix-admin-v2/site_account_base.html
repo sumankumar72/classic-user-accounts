@@ -10,43 +10,51 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>
-    {% block title %}
-    Log in
-    {% endblock %}
-  </title>
+        {% block title %}
+        Log in
+        {% endblock %}
+    </title>
 
     <!-- Custom CSS -->
-    <link href="{% static request.THEME_NAME|add:'css/style.min.css' %}" rel="stylesheet">
+    <link href="{% static request.THEME_NAME|add:'css/style.min.css' %}" rel="stylesheet"/>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <![endif]-->
 
     <style>
         #loginbox {overflow: hidden !important;text-align: left;position: relative;border: 1px solid #484848;}
+
+
     </style>
     {% block extra_style %} {% endblock %}
 
 </head>
 <body>
-<div id="loginbox">
-<div class="control-group normal_text"><h3><img src="/static/img/logo.png" alt="Logo"/></h3></div>
-{% block content %}
+<div class="main-wrapper">
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
 
-{% endblock %}
+    {% block content %}
+
+    {% endblock %}
+
 </div>
 
-
-    <script src="{% static request.THEME_NAME|add:'assets/libs/jquery/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="{% static request.THEME_NAME|add:'assets/libs/popper.js/dist/umd/popper.min.js' %}"></script>
-    <script src="{% static request.THEME_NAME|add:'assets/libs/bootstrap/dist/js/bootstrap.min.js' %}"></script>
-    <!-- ============================================================== -->
-    <!-- This page plugin js -->
-    <!-- ============================================================== -->
-    <script>
+<script src="{% static request.THEME_NAME|add:'assets/libs/jquery/jquery.min.js' %}"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="{% static request.THEME_NAME|add:'assets/libs/popper.js/umd/popper.min.js' %}"></script>
+<script src="{% static request.THEME_NAME|add:'assets/libs/bootstrap/js/bootstrap.min.js' %}"></script>
+<!-- ============================================================== -->
+<!-- This page plugin js -->
+<!-- ============================================================== -->
+<script>
 
     $('[data-toggle="tooltip"]').tooltip();
     $(".preloader").fadeOut();
@@ -62,7 +70,9 @@
         $("#recoverform").hide();
         $("#loginform").fadeIn();
     });
-    </script>
+
+
+</script>
 
 
 </body>

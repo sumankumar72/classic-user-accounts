@@ -1,5 +1,5 @@
 {% extends request.THEME_NAME|add:'site_account_base.html' %}
-
+{% load static %}
 <!--{% with "shop/"|add:shop_name|add:"/base.html" as template %}-->
 <!--{% include template %}-->
 <!--{% endwith %}-->
@@ -11,69 +11,94 @@
     #loginbox .control-group {
         padding: 10px 0;
     }
+
 </style>
 {% endblock %}
 
 {% block content %}
 
 
-    <form action="" method="post">
-        {% csrf_token %}
-         <div class="control-group">
-            <div class="controls">
-                <div class="main_input_box">
-                    <span class="add-on bg_lg"><i class="icon-user"> </i></span><input type="text" placeholder="First Name" name="first_name"/>
-                </div>
+<div class="auth-wrapper d-flex no-block justify-content-center align-items-center bg-dark">
+    <div class="auth-box bg-dark border-top border-secondary">
+        <div id="loginform">
+            <div class="text-center p-t-20 p-b-20" style="padding-bottom:20px;">
+                <span class="db"><img src="{% static 'img/logo.png' %}" alt="logo"/></span>
             </div>
-         </div>
-         <div class="control-group">
-             <div class="controls">
-                <div class="main_input_box">
-                    <span class="add-on bg_lg"><i class="icon-user"> </i></span><input type="text" placeholder="Last Name" name="last_name"/>
-                </div>
-             </div>
-         </div>
-         <div class="control-group">
-             <div class="controls">
-                 <div class="main_input_box">
-                     <span class="add-on bg_lg"><i class="icon-envelope"> </i></span><input type="text" placeholder="Email" name="email"/>
-                 </div>
-             </div>
-         </div>
-         <div class="control-group">
-             <div class="controls">
-                 <div class="main_input_box">
-                    <span class="add-on bg_lg"><i class="icon-lock"> </i></span><input type="password" placeholder="Password" name="password1"/>
-                </div>
-             </div>
-         </div>
-         <div class="control-group">
-             <div class="controls">
-                 <div class="main_input_box">
-                    <span class="add-on bg_lg"><i class="icon-lock"> </i></span><input type="password" placeholder="Confirm Password" name="password2"/>
-                </div>
-             </div>
-         </div>
+            <form method="post" class="form-horizontal m-t-20">
+                {% csrf_token %}
+                <div class="row p-b-30" style="padding-bottom:30px;">
+                    <div class="col-md-12">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-success text-white"><i
+                                        class="ti-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control form-control-lg" placeholder="First Name"
+                                   aria-label="Username" aria-describedby="basic-addon1" name="first_name">
+                        </div>
 
-        <div class="form-actions">
-            <span class="pull-left">
-              <label>
-                <input type="checkbox">
-                I agree to the <a href="#">terms</a>
-              </label>
-            </span>
-            <span class="pull-right">
-              <button type="submit" class="btn btn-success">Register</button>
-            </span>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-success text-white"><i
+                                        class="ti-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control form-control-lg" placeholder="Last Name"
+                                   aria-label="Username" aria-describedby="basic-addon1" name="last_name">
+                        </div>
+
+                        <!-- email -->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-danger text-white"><i
+                                        class="ti-email"></i></span>
+                            </div>
+                            <input type="text" class="form-control form-control-lg" placeholder="Email"
+                                   aria-label="Username" aria-describedby="basic-addon1" name="email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-warning text-white"><i
+                                        class="ti-pencil"></i></span>
+                            </div>
+                            <input type="text" class="form-control form-control-lg" placeholder="Password"
+                                   aria-label="Password" aria-describedby="basic-addon1" name="password1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-info text-white" id="basic-addon2"><i
+                                        class="ti-pencil"></i></span>
+                            </div>
+                            <input type="text" class="form-control form-control-lg" placeholder=" Confirm Password"
+                                   aria-label="Password" aria-describedby="basic-addon1"  name="password2">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row border-top border-secondary">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <div class="p-t-20" style="padding-top:20px;text-align:center;">
+                                <button type="submit" class="btn btn-success">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div style="text-align:center;color:#fff; height:50px;">
+                            --OR--
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div style="text-align:center;">
+                            <a href="{% url 'login' %}" class="flip-link btn btn-primary" id="to-login">« Back to login</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-
-    </form>
-
-    <div class="social-auth-links text-center">
-        <p>- OR -</p>
-        <a href="{% url 'login' %}" class="text-center">I already have a membership</a>
     </div>
-
+</div>
 
 
 {% endblock %}
