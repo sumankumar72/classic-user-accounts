@@ -6,11 +6,17 @@
 
 
         <div class="auth-wrapper d-flex no-block justify-content-center align-items-center bg-dark">
+
             <div class="auth-box bg-dark border-top border-secondary">
                 <div id="loginform">
                     <div class="text-center p-t-20 p-b-20"  style="padding-bottom:20px;">
                         <span class="db"><img src="{% static 'img/logo.png' %}" alt="logo" /></span>
                     </div>
+                    {% if form.errors %}
+                    <div class="alert alert-danger" role="alert">
+                        {{ form.errors }}
+                    </div>
+                    {% endif %}
                     <form method="post" class="form-horizontal m-t-20">
                         {% csrf_token %}
                         <div class="row p-b-30" style="padding-bottom:30px;">
@@ -26,7 +32,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-warning text-white" id="basic-addon2"><i class="ti-pencil"></i></span>
                                     </div>
-                                    <input type="text" class="form-control form-control-lg" placeholder="Password" aria-label="Password"
+                                    <input type="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password"
                                            aria-describedby="basic-addon1" name="password" id="password">
                                 </div>
                             </div>
