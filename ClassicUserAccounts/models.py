@@ -37,9 +37,21 @@ class TimeZone(models.Model):
         return u'%s' % self.zone_text
 
     class Meta(object):
-        '''AppPreferences Meta Class'''
         verbose_name = 'Timezone'
         verbose_name_plural = 'Timezones'
+
+
+class Address(models.Model):
+    street = models.CharField(max_length=250, null=True, default=None)
+    city = models.CharField(max_length=100, null=True, default=None)
+    state = models.CharField(max_length=100, null=True, default=None)
+    zip_code = models.CharField(max_length=20, null=True, default=None)
+    country = models.ForeignKey(Country, on_delete=models.SET_NULL, null=True, blank=True)
+    address_line1 = models.TextField(null=True, blank=True)
+    address_line2 = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return "{0}, {1}, {2}, {3}, {4}".format(self.country, self.state, self.city, self.zip_code, self.address_line1)
 
 
 THEMES = (('default Theme', 'Default Theme'), ('theme-1', 'Theme-1'), ('theme-2', 'Theme-2'), ('theme-3', 'Theme-3'))
@@ -71,39 +83,38 @@ class User(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField(auto_now=True)
     avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)
     gender = models.CharField(choices=GENDER, max_length=6, null=True, blank=True)
+
     country = models.ForeignKey(Country, on_delete=models.CASCADE, null=True, blank=True)
     state = models.CharField(max_length=100, null=True, blank=True)
     city = models.CharField(max_length=100, null=True, blank=True)
     address_line1 = models.TextField(null=True, blank=True)
     address_line2 = models.TextField(null=True, blank=True)
     zip_code = models.CharField(max_length=10, null=True, blank=True)
+
     skype_id = models.CharField(_('Skype ID'), max_length=100, null=True, blank=True)
     facebook_id = models.CharField(_('Facebook ID'), max_length=100, null=True, blank=True)
     twitter_id = models.CharField(_('LinkedIn ID'), max_length=100, null=True, blank=True)
     linkedin_id = models.CharField(_('Twitter ID'), max_length=100, null=True, blank=True)
     business_email = models.EmailField(max_length=250, null=True, blank=True,
                                        help_text='<b>Note:</b>This email will used for all communication purpose.')
+    permanent_address = models.OneToOneField(Address, null=True, default=None, on_delete=models.SET_NULL,
+                                             related_name='permanent_address', blank=True)
+    company_address = models.OneToOneField(Address, null=True, default=None, on_delete=models.SET_NULL,
+                                           related_name='company_address', blank=True)
     timezone = models.ForeignKey(TimeZone, null=True, blank=True, on_delete=models.SET_NULL)
-
     user_code = models.CharField(max_length=20, null=True, blank=True,
                                  help_text='This field store a unique user code. ie dealer code, employee code etc.')
     theme = models.CharField(choices=THEMES, max_length=30, default='default-theme')
+    friends = models.ManyToManyField('User', default=None, blank=True)
 
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
-    # groups.short_description = 'Roles'
-
     class Meta:
         verbose_name = _('user')
         verbose_name_plural = _('users')
-    # app_label = 'authentication'
-
-    # def groups(self):
-    # 	return self.groups
-    # groups.short_description = 'Roles'
 
     def avatar_tag(self):
         style = 'box-shadow: 0px 0px 4px 1px #000;width: 50px;height: 50px;border-radius: 50%;'
@@ -121,15 +132,10 @@ class User(AbstractBaseUser, PermissionsMixin):
     avatar_tag.short_description = 'Profile Picture'
 
     def email_user(self, subject, message, from_email=None, **kwargs):
-        '''
-        Sends an email to this User.
-        '''
         # send_mail(subject, message, from_email, [self.email], **kwargs)
         pass
 
     def has_module_perms(self, app_label):
-        "Does the user have permissions to view the app `app_label`?"
-        # Simplest possible answer: Yes, always
         return True
 
     def get_is_active(self):
@@ -142,10 +148,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         return self.title
 
     def get_email(self):
-        if self.communication_email:
-            return self.communication_email
-        else:
-            return self.email
+        return self.email
 
     def get_first_name(self):
         return self.first_name
@@ -187,9 +190,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     def get_short_name(self):
         # The user is identified by their email address
         return self.first_name
-
-    def get_communication_email(self):
-        return self.communication_email
 
     def __str__(self):  # __unicode__ on Python 2
         return self.email

@@ -148,4 +148,5 @@ THEME_NAME = 'default-theme'
 # THEME_NAME = 'theme-2'
 THEME_NAME = 'matrix-admin-v2'
 CLASSIC_VALIDATE_EMAIL = True
+CLASSIC_UNIQUE_MOBILE = True
 

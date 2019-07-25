@@ -5,6 +5,7 @@ from django.db import migrations, models
 import django.db.models.deletion
 from ClassicUserAccounts.initial_migrations import insert_timezone
 
+
 class Migration(migrations.Migration):
 
     initial = True

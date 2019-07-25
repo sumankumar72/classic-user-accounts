@@ -15,16 +15,16 @@ class UserAdmin(um):
     add_form = RegistrationForm
     
     list_display = ('avatar_tag', 'get_full_name', 'email', 'mobile', 'website', 'is_admin')
-    list_filter = ('email', 'first_name')
+    list_filter = ('gender', 'permanent_address__city',)
     filter_horizontal = ('groups', 'user_permissions',)
+
     fieldsets = (
         (None, {'fields': ('email', )}),
         ('Theme', {'fields': ('theme', )}),
 
         ('Personal Info', {'fields': ('avatar', 'title', 'first_name', 'last_name', 'date_of_birth', 'gender',
-                                      'business_email', 'timezone')}),
-        ('Contact info', {'fields': ('country', 'state', 'city', 'zip_code', 'address_line1', 'address_line2',
-                                     'mobile', 'website')}),
+                                      'business_email', 'timezone', 'mobile', 'website', 'friends')}),
+        ('Contact info', {'fields': ('permanent_address', 'company_address')}),
         ('Social info', {'fields': ('skype_id', 'facebook_id', 'linkedin_id', 'twitter_id')}),
         ('Permissions', {'fields': ('is_active', 'is_superuser', 'is_admin', 'groups', 'user_permissions')}),
         ('Important Dates', {'fields': ('last_login',)}),
@@ -47,8 +47,8 @@ class UserAdmin(um):
         ('Permissions', {'fields': ('is_active', 'is_superuser', 'is_admin', 'groups', 'user_permissions')}),
     )
     
-    search_fields = ('email',)
-    ordering = ('email',)
-    filter_horizontal = ()
+    search_fields = ('first_name',)
+    ordering = ('first_name',)
+
 
 admin.site.register(User, UserAdmin)
