@@ -4,6 +4,7 @@
 [![GitHub license](https://img.shields.io/badge/Slack-%20-%23e01563.svg)](https://sumanshandilya.slack.com)
 
 #### Latest Update
+- Unique mobile number feature added (`Add CLASSIC_UNIQUE_MOBILE = True in your settings file`).
 - New Matrix-Admin BT4 Theme added (`Add THEME_NAME = 'matrix-admin-v2' in your settings file`).
 
 #### Features

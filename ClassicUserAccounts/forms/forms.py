@@ -25,20 +25,13 @@ class RegistrationForm(forms.ModelForm):
             raise forms.ValidationError("Passwords don't match")
         return password2
 
-    def clean_mobile(self):
-        mobile = self.cleaned_data.get('mobile')
-        if hasattr(settings, 'CLASSIC_UNIQUE_MOBILE') and settings.CLASSIC_UNIQUE_MOBILE:
-            cnt = User.objects.filter(mobile=mobile).count()
-            if cnt > 0:
-                raise forms.ValidationError("This mobile number already exists")
-        return mobile
-
-    def clean_email(self):
-        if hasattr(settings, 'CLASSIC_VALIDATE_EMAIL') and settings.CLASSIC_VALIDATE_EMAIL:
-            if not self.valid_email(self.cleaned_data["email"]):
-                raise forms.ValidationError("Please enter valid email")
-
-        return self.cleaned_data["email"]
+    # def clean_mobile(self):
+    #     mobile = self.cleaned_data.get('mobile')
+    #     if hasattr(settings, 'CLASSIC_UNIQUE_MOBILE') and settings.CLASSIC_UNIQUE_MOBILE:
+    #         cnt = User.objects.filter(mobile=mobile).count()
+    #         if cnt > 0:
+    #             raise forms.ValidationError("This mobile number already exists")
+    #     return mobile
 
     @staticmethod
     def valid_email(email):
@@ -69,14 +62,6 @@ class UserChangeForm(forms.ModelForm):
         model = User
         # fields = ('email', 'first_name', 'last_name', 'is_active', 'title', 'address_line1', 'address_line2')
         fields = '__all__'
-
-    def clean_mobile(self):
-        mobile = self.cleaned_data.get('mobile')
-        if hasattr(settings, 'CLASSIC_UNIQUE_MOBILE') and settings.CLASSIC_UNIQUE_MOBILE:
-            cnt = User.objects.filter(mobile=mobile).count()
-            if cnt > 1:
-                raise forms.ValidationError("This mobile number already exists")
-        return mobile
 
     def clean_email(self):
         if hasattr(settings, 'CLASSIC_VALIDATE_EMAIL') and settings.CLASSIC_VALIDATE_EMAIL:

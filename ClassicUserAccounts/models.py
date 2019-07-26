@@ -5,6 +5,8 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import Group
 from django.utils.html import format_html
 from .managers import UserManager
+from django.conf import settings
+from django.core.exceptions import ValidationError
 
 
 # from django.contrib.auth import get_user_model
@@ -57,8 +59,18 @@ class Address(models.Model):
 THEMES = (('default Theme', 'Default Theme'), ('theme-1', 'Theme-1'), ('theme-2', 'Theme-2'), ('theme-3', 'Theme-3'))
 
 
+def validate_mobile(mobile):
+    if len(mobile) != 10:
+        raise ValidationError("Please enter valid mobile number.")
+
+    if hasattr(settings, 'CLASSIC_UNIQUE_MOBILE') and settings.CLASSIC_UNIQUE_MOBILE:
+        cnt = User.objects.filter(mobile=mobile).count()
+        if cnt > 0:
+            raise ValidationError("This mobile number already exists")
+
+
 class User(AbstractBaseUser, PermissionsMixin):
-    GENDER = (('Male', 'Male'), ('Female', 'Female'))
+    GENDER = (('Male', 'Male'), ('Female', 'Female'), ('Other', 'Other'))
     TITLE = (('1st Lt', 'First Lieutenant'), ('Adm', 'Admiral'),
              ('Atty', 'Attorney'), ('Capt', 'Captain '), ('Chief', 'Chief'),
              ('Cmdr', 'Commander'), ('Col', 'Colonel'), ('Dean', 'Dean'),
@@ -73,7 +85,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     title = models.CharField(_('title'), choices=TITLE, max_length=100, null=True, blank=True)
     first_name = models.CharField(_('first name'), max_length=50, blank=True)
     last_name = models.CharField(_('last name'), max_length=50, blank=True)
-    mobile = models.CharField(max_length=20, null=True, blank=True)
+    mobile = models.CharField(max_length=20, null=True, blank=True, validators=[validate_mobile])
     phone = models.CharField(max_length=20, null=True, blank=True)
     fax = models.CharField(max_length=20, null=True, blank=True)
     website = models.URLField(max_length=300, null=True, blank=True)
@@ -82,7 +94,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     date_of_birth = models.DateField(_("date of birth"), null=True, blank=True)
     date_joined = models.DateTimeField(auto_now=True)
     avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)
-    gender = models.CharField(choices=GENDER, max_length=6, null=True, blank=True)
+    gender = models.CharField(choices=GENDER, max_length=6, null=True, blank=True, default='Other')
 
     country = models.ForeignKey(Country, on_delete=models.CASCADE, null=True, blank=True)
     state = models.CharField(max_length=100, null=True, blank=True)

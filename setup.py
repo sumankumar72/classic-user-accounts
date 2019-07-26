@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-classic-user-accounts',
-    version='1.0.33',
+    version='1.0.37',
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',  # example license
@@ -17,14 +17,14 @@ setup(
     long_description=README,
     long_description_content_type='text/markdown',
     url='http://sumanshandilya.com',
-    author='Suman Kumar',
+    author='Suman Shandilya',
     author_email='sumankumar72@gmail.com',
     install_requires=[
         'Pillow',
         'sorl-thumbnail',
     ],
-    keywords = ['django theme', 'Extend Django User Model', 'User Model',
-                'theme', 'django theme', 'interface', 'Django Startup Setup'],
+    keywords=['django theme', 'Extend Django User Model', 'User Model',
+              'theme', 'django theme', 'interface', 'Django Startup Setup'],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
